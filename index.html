@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            Valeden - Grandpa Kitchen
+        </title>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>
+            I'd like to tell you about Narayana Reddy.
+        </h1>
+        <div class="divider"></div>
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/fish.jpg" style="width:100%">
+  <div class="text">Grandpa turned this behemoth into apollo fish.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/chicken.jpg" style="width:100%">
+  <div class="text">Grandpa and his grandson preparing chickens.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/help.jpg" style="width:100%">
+  <div class="text">Grandpa and his helpers enjoy a taste of their good work.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/foil.jpg" style="width:100%">
+  <div class="text">Grandpa with many meals for hungry kids.</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/pizza.jpg" style="width:100%">
+  <div class="text">Grandpa cooked this giant pizza without a conventional oven.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        <div class="textBox">
+            <h2>"Loving. Caring. Sharing."</h2>
+            <p>
+                This is 73 year old Narayana Reddy, colloquially known as Grandpa. He, alongside his grandson Shrikant Reddy and 2 other men, cook massive meals twice a week for hungry orphans in Telangana, India. Videoes of their work are uploaded to their Youtube channel, <a href="https://www.youtube.com/channel/UC1of9ELYwB623fWaAMRDVFA">Grandpa Kitchen</a>. In these heartwarming videos, Grandpa and the others cook in an open area surrounded by nature. The cooking videoes are instructive, with Grandpa saying what steps are next and listing off ingredients as he uses them. Once the meals are complete however, the 4 men hand them out to those who are hungry. While sometimes the recipients of these meals are adults, most of the time it's the children at a local orphanage. Not much is known about these men but there is one thing for certain, they're helping those in need.
+            </p>
+        </div>
+        <iframe style="display: block; margin: auto;" width="1000" height="500" src="https://www.youtube.com/embed/xNHUxCQfOAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="textBox">
+            <p class="cap">In this video, Grandpa prepares chicken biryani for a little girl's 11th birthday party. The first one she ever had.</p>
+        </div>
+        <div class="divider2"></div>
+        <div class="textBox">
+            <h2>"This is my family."</h2>
+            <p>
+                As of 2018 there are nearly 30 million orphaned children in India. As of 2019 there are over 195 million people in India that are malnourished. Grandpa and his helpers do good for their part of India, but there are many other places that are not fortunate enough to have the same amount of support from good people like them.
+                If you would like to make a difference, the same way Grandpa has, I encourage you to donate to either 
+                <a href="https://www.savethechildren.in/">Save The Children</a> or the <a href="https://www.indiafoodbanking.org/">Indian Foodbanking Network</a>. 
+                Both of these non-profit organizations do good work and giving them money to get it done is a quick and easy way for you to help. If you would like to support Grandpa directly, they do have a <a href="https://www.patreon.com/grandpakitchen">Patreon</a> page you can support as well.
+            </p>
+        </div>
+        <div class="divider3"></div>
+        <div class="textBox">
+            <p class="credit">All images and videos used on this webpage belong to the <a class="credit" href="https://www.youtube.com/channel/UC1of9ELYwB623fWaAMRDVFA">Grandpa Kitchen</a> Youtube channel.</p>
+        </div>
+    </body>    
+</html>
